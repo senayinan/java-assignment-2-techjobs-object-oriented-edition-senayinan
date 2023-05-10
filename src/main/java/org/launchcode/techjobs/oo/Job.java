@@ -94,4 +94,45 @@ public class Job {
     public int getId() {
         return id;
     }
+
+
+    public String toString() {
+
+
+        String myString = "\n" +
+                "ID: " + id + "\n";
+
+        if (name.equals("")) {
+            myString += "Name: Data not available\n";
+        } else {
+            myString += "Name: " + name + "\n";
+        }
+
+        if (employer.getValue().equals("")) {
+            myString += "Employer: Data not available\n";
+        } else {
+            myString += "Employer: " + employer + "\n";
+        }
+
+        if (location.getValue().equals("")) {
+            myString += "Location: Data not available\n";
+        } else {
+            myString += "Location: " + location + "\n";
+        }
+
+        if (positionType.getValue().equals("")) {
+            myString += "Position Type: Data not available\n";
+        } else {
+            myString += "Position Type: " + positionType + "\n";
+        }
+
+        if (coreCompetency.getValue().equals("")) {
+            myString += "Core Competency: Data not available\n";
+        } else {
+            myString += "Core Competency: " + coreCompetency + "\n";
+        }
+
+
+        return myString;
+    }
 }
